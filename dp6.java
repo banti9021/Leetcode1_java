@@ -49,6 +49,17 @@ public class dp6 {
             
             
         }
+        //four paart
+        for(i=0;i<n/2+1;i++){
+            for(j=0;j<n*2;j++){
+                if(j>=i && j<=n-i-1 || j>=n+1+i && j<=n*2-i){
+                    System.out.print('*');
+                }else
+                System.out.print(' ');
+            }
+           
+            System.out.println();
+        }
 
     }
 }
